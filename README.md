@@ -1,4 +1,5 @@
 # musuatbildes.github.io
+<html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -101,7 +102,12 @@ a {
               <hr>
           
               <p>Izveidojot kontu, jūs piekrītat mūsu<a href="#">Noteikumi&konfidencialitāte.</a>.</p>
-              <button type="submit" class="registerbtn">Register</button>
+              <button onClick="myOnClickFn()" type="submit" class="registerbtn">Register</button>
+                <script>
+                    function myOnClickFn(){
+                    document.location.href="musuatbilde.html";
+                    }
+                    </script>
             </div>
           
             <div class="container signin">
