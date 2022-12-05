@@ -1,5 +1,4 @@
 # musuatbildes.github.io
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -75,7 +74,7 @@ a {
 </head>
 <body>
     <h1 style="color:blue;"><center>Mūsu Atbildes</center></h1>
-    <hr></hr>
+    <hr>
     <h2><center>Reģistrācija</center></h2>
     
     <div class="container">
@@ -109,9 +108,6 @@ a {
               <p>Jau ir konts? <a href="#">Sign in</a>.</p>
             </div>
           </form>
-        <hr></hr>
-  
-    
-    
-</body>
-</html>
+        <hr>
+        </body>
+     </html>
