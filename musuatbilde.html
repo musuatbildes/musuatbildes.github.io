@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusuAtbildes</title>
     <style>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"> </script>  
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"> </script>   
         * {
             margin: 0;
             padding: 0;
@@ -86,6 +88,51 @@ a:active {
 body {
   overflow: scroll; /* Show scrollbars */
 }
+        body {   
+  text-align: center;  
+  padding: 20px;  
+background-color: #F8F9FA;  
+background-size: 1800% 1800%;  
+font-family: "Lucida Console", "Courier New", monospace;  
+-webkit-animation: rainbow 18s ease infinite;  
+-z-animation: rainbow 18s ease infinite;  
+-o-animation: rainbow 18s ease infinite;  
+  animation: rainbow 18s ease infinite; }  
+h1  {  
+  line-height: 2em;   
+  padding-bottom: 5px;  
+  text-transform: none;  
+  font-size: 1.7em;  
+ font-weight: bold;  
+  font-style: italic;  
+ font-family: "Lucida Console", "Courier New", monospace;  
+  color: #999;   
+  letter-spacing: -0.005em;  
+  word-spacing: 1px;  
+  letter-spacing: none;  
+}  
+h2  {  
+  margin-top: 40px;  
+  text-transform: none;  
+  font-size: 1.75em;  
+  font-weight: bold;  
+  font-family: "Lucida Console", "Courier New", monospace;  
+  color: #999;   
+  letter-spacing: -0.005em;   
+  word-spacing: 1px;  
+  letter-spacing: none;  
+}  
+.clock {  
+    position: absolute;  
+    top: 50%;  
+    left: 50%;  
+     padding-top: 15px;  
+    transform: translateX(-50%) translateY(-50%);  
+    color: #17D4FE;  
+    font-size: 60px;  
+    font-family: Orbitron;  
+    letter-spacing: 7px;  
+}  
                
 </style>
     
@@ -112,6 +159,32 @@ body {
                 <h3>Šīs mājas lapas mērķis bija lai cilvēki varētu atrast sev vēlamās anketas.</h3>
                 <h3>Ceram ka jums patiks šī mājas lapa.</3>
                 <img src="https://i.pinimg.com/474x/3d/c4/66/3dc46683ec3f6b87da2bb4b78fde993b.jpg">
+                <h1>Ja radušies kādi jautājumi raskti uz epastu musuatbildes@gmail.com</h1>
+                <div id = "MyClockDisplay" class = "clock" onload = "showTime()"> </div>  
+<script>  
+function showTime(){  
+    var date = new Date();  
+    var h = date.getHours();  
+    var m = date.getMinutes();  
+    var s = date.getSeconds();  
+    var session = "AM";  
+    if(h == 0) {  
+        h = 12;  
+    }  
+    if(h > 12) {  
+        hh = h - 12;  
+        session = "PM";  
+    }  
+    h = (h < 10) ? "0" + h : h;  
+    m = (m < 10) ? "0" + m : m;  
+    s = (s < 10) ? "0" + s : s;  
+    var time = h + ":" + m + ":" + s + " " + session;  
+    document.getElementById("MyClockDisplay").innerText = time;  
+    document.getElementById("MyClockDisplay").textContent = time;  
+    setTimeout(showTime, 1000);  
+}  
+showTime();  
+                </script>
 
             </div>
             <div class="middle-column">
