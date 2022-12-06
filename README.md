@@ -100,7 +100,7 @@ a {
               <input type="text" placeholder="Amats" name="Amats" id="Amats" required>
               <hr>
           
-              <p>Izveidojot kontu, jūs piekrītat mūsu<a href="#">Noteikumi&konfidencialitāte.</a>.</p>
+              <p>Izveidojot kontu, jūs piekrītat mūsu<a href="noteikumi&konfidecialitāte.html">Noteikumi&konfidencialitāte.</a>.</p>
               <button onClick="myOnClickFn()" type="submit" class="registerbtn">Register</button>
                 <script>
                     function myOnClickFn(){
